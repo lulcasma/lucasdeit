@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    /*Paleta de corers*/
+    --corfundo: rgb(255, 255, 255);
+    --cortexto: black;
+    --corprincipal: #146152;
+    --corsecundaria: #44803F;
+    --cordestaque: #FF5A33;
+
+    /*Largura do site*/
+    --larguramaxima: 1000px;
+    --larguraminima: 250px;
+
+    /*Fontes do site*/
+    --fontegeral: 'Roboto', sans-serif;
+    --fontetitulos: 'Montserrat', sans-serif; 
+    --fontedestaque: 'Caveat', cursive;
+}
+
+*{
+    margin: 0; /*Margem Externas*/
+    padding: 0; /*Margem Internas*/
+}
+
+body{
+    background-color: var(--corfundo); /*Cor de fundo do site*/
+    font-family: var(--fontegeral); /*Define a fonte padrao do site*/
+    color: var(--cortexto); /*Define a cor do texto*/
+}
+
+header, main, footer{
+    max-width: var(--larguramaxima); /*Largura maxima do site*/
+    min-width: var(--larguraminima); /*Largura minima do site*/
+    /*background-color: aqua; /*APAGAR DEPOIS*/
+    margin: auto; /*Centralizar a pagina*/
+    padding: 10px; /*Magem interna*/
+    position: relative; /*Os elementos internos movem de carodo com o elemento pai*/
+}
+
+#sociais{
+    width: 80px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex; /*Permite mover os boões internos*/
+    justify-content: space-between; /*Distribuir horizontalmente*/
+}
+
+.social{ /*Botões sociais*/
+    width: 30px;
+    filter: invert(1); /*Inverte as cores*/
+    transition: 0.4s;
+}
+
+.social:hover{
+    filter: invert(1) opacity(.7) drop-shadow(0px 0px 0px var(--cordestaque));
+}
+
+#capa{
+    width: 100%; /*Largura*/
+    height: 300px; /*Altura - Mudar de acordo copm a preferencia*/
+    background-color: var(--corprincipal); /*Cor de fundo*/
+    background-image: url('images/bg-fantasia.jpg'); /*Define a imagem de fundo da div*/
+    background-repeat: no-repeat; /*Não repetir a imagem*/
+    background-size: cover; /*Akusta a imagem ao tamnho da div*/
+    background-position: 0px 0px; /*Posiciona a imagem dentro da div*/
+    display: flex; /*Elementos internos flexiveis alinhados lado a lado*/
+    flex-direction: column; /*Elementos um abaixo do outro*/
+    justify-content: center; /*Alinhar horizintalmente*/
+    align-items: center; /*Alinhar Verticalmente*/
+}
+
+#capa h1{
+    color: var(--corfundo);
+    font-family: var(--fontetitulos);
+}
+
+#capa p{
+    color: var(--corfundo);
+    font-family: var(--fontedestaque);
+}
+
+#fotoperfil{
+    width: 100px; /*Largura*/
+    position: absolute; /* Permite que a foto mude de lugar*/
+    top: 200px; /*Permite baixar a foto em relação ao topo*/
+    left: 50%; /*Distancia a foto 50% para a direita*/
+    right: 50%; /*Distancia a foto 50% para a esquerda*/
+    transform: translate(-50%); /*Centraliza a foto em seu eixo*/
+    border-radius: 50%; /*Torna a foto redonda*/
+}
+
+nav{
+    margin-top: 30px; /*Afasta do topo 30px*/
+}
+
+.menu{
+    display: none;
+}
+
+main img{
+    width: 100%;
+}
