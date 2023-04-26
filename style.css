@@ -59,9 +59,9 @@ header, main, footer{
 
 #capa{
     width: 100%; /*Largura*/
-    height: 300px; /*Altura - Mudar de acordo copm a preferencia*/
+    height: 500px; /*Altura - Mudar de acordo copm a preferencia*/
     background-color: var(--corprincipal); /*Cor de fundo*/
-    background-image: url('images/bg-fantasia.jpg'); /*Define a imagem de fundo da div*/
+    background-image: url('images/02.jpeg'); /*Define a imagem de fundo da div*/
     background-repeat: no-repeat; /*Não repetir a imagem*/
     background-size: cover; /*Akusta a imagem ao tamnho da div*/
     background-position: 0px 0px; /*Posiciona a imagem dentro da div*/
@@ -84,7 +84,7 @@ header, main, footer{
 #fotoperfil{
     width: 100px; /*Largura*/
     position: absolute; /* Permite que a foto mude de lugar*/
-    top: 200px; /*Permite baixar a foto em relação ao topo*/
+    top: 400px; /*Permite baixar a foto em relação ao topo*/
     left: 50%; /*Distancia a foto 50% para a direita*/
     right: 50%; /*Distancia a foto 50% para a esquerda*/
     transform: translate(-50%); /*Centraliza a foto em seu eixo*/

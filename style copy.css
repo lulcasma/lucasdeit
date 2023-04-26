@@ -54,7 +54,7 @@ header, main, footer{
     width: 100%; /*Largura*/
     height: 300px; /*Altura - Mudar de acordo copm a preferencia*/
     background-color: var(--corprincipal); /*Cor de fundo*/
-    background-image: url('images/bg-fantasia.jpg'); /*Define a imagem de fundo da div*/
+    background-image: url('images/02.jpeg'); /*Define a imagem de fundo da div*/
     background-repeat: no-repeat; /*Não repetir a imagem*/
     background-size: cover; /*Akusta a imagem ao tamnho da div*/
     background-position: 0px 0px; /*Posiciona a imagem dentro da div*/
